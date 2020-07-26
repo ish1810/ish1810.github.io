@@ -1,0 +1,86 @@
+.backgroundimage{ background-image: url('https://images.pexels.com/photos/1939485/pexels-photo-1939485.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500');
+                  width: 100%;
+                  height: 100vh;
+                  background-size: cover;
+}
+.intro{background-color: black;
+       color: white;
+       font-family: 'IBM Plex Serif', serif;
+       font-size: 45px;
+       width: 100%;
+       height: 12%;
+       text-transform: uppercase;
+       text-align: center;
+}
+.list{ background-color: #99ccff;
+       color: white;
+       font-size: 30px;
+       font-family: 'Rowdies', cursive;
+       height: 65px;
+       width: 100%;
+       margin-top: -1em;
+      
+}
+#horizontal-list { display: flex;
+                   flex-direction: row;
+                   justify-content: space-around;
+                    
+}
+#image{ background-image: url('image/into2.jpg');
+        height: 75vh;
+        width: 90%;
+        position: absolute;
+        left: 50%;
+        top: 61%;
+        transform: translate(-50%, -50%); 
+        background-size: cover;
+        background-repeat: no-repeat;
+        box-shadow: 8px 2px 10px 7px black;
+        animation:slider 20s infinite linear;
+        
+}
+@keyframes slider {
+  0% {
+    background-image: url('image/into2.jpg');
+  }
+  25% {
+    background-image: url('image/intro1.jpg');
+  }
+  50%{
+    background-image: url('image/intro2.jpg');
+  }
+ 75%{
+    background-image: url('image/intro3.jpg');
+  }
+}
+#aboutus{ text-transform: uppercase;
+          font-family: 'Lobster', cursive;
+          font-weight: bolder;
+          font-size: 25px;
+          text-align: center;
+          color: black;
+}
+#grad {
+  background-image: linear-gradient(to right,#ffff00 ,#ffffe6);
+  height: 40vh;
+  width: 100%;
+}
+.aboutinfo{ font-family: 'Lora', serif;
+            font-size: 20px;
+}
+.gif{
+      width: 140px; height: 120px;
+      }
+.gif img{ width: 20%;
+          height: 90px;
+          position: absolute;
+          left: 1360px;
+          animation-name: solider;
+          animation-duration: 10s;
+          animation-timing-function: linear;
+          animation-iteration-count: infinite;
+ }
+@keyframes solider  {
+  from {left: 1360px;}
+  to {left: 0%;}
+}
