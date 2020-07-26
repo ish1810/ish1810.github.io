@@ -7,7 +7,7 @@
 }
 .intro2{font-family: 'Staatliches', cursive;
         background-image: linear-gradient(to right,#e6f2ff ,#003366);
-        height: 10%;
+        height: 15%;
         width: 100%;
         font-size: 500%;
         text-align: center;
@@ -17,36 +17,35 @@
         text-shadow: 3px 3px 5px black;
         text-transform: uppercase;
         position: relative;
-        padding-bottom: 1%; 
-         
-
+        margin-bottom:2.5%; 
 }
-.image{ background-image: url('image/army1.jpg');
+.image{ background-image: url('army1.jpg');
          width: 80%;
          height: 74%;
          background-size: cover;
-         box-border: 7px;
+         border-radius: 7px;
+		 margin-top:5% auto;
          box-shadow: 3px 4px 6px white;
-         margin: 2% 5% 5% 9%;
+         margin: 0px auto;
          animation: slider 30s infinite linear;
 
 }
 @keyframes slider {
   0% {
-    background-image: url('image/army1.jpg');
+    background-image: url('army1.jpg');
   }
   25% {
-    background-image: url('image/army2.jpg');
+    background-image: url('army2.jpg');
   }
   50%{
-    background-image: url('image/army3.jpg');
+    background-image: url('army3.jpg');
   }
  75%{
-    background-image: url('image/army4.jpg');
+    background-image: url('army4.jpg');
   }
 }
 .manage{background-color: black;
-         height: 35%;
+         height:auto;
          width: 100%;
          }
 #heading{
@@ -54,12 +53,14 @@
          font-size: 40px;
          font-weight: bold;
          color: white;
+		 margin: 3% 0px;
 
 }
 .aboutus{font-family: 'Amiri', serif;
         font-size: 25px;
         color: white;
-        margin: 0% 0% 0% 0%;
-        padding-top: 0%;
+	    position:relative;
+        top:0px ;		
+        bottom:-12px; 
 
 }

@@ -8,7 +8,9 @@
        font-family: 'IBM Plex Serif', serif;
        font-size: 45px;
        width: 100%;
-       height: 12%;
+	   padding-top:auto;
+	   margin: 0px auto;
+       height: auto;
        text-transform: uppercase;
        text-align: center;
 }
@@ -16,41 +18,44 @@
        color: white;
        font-size: 30px;
        font-family: 'Rowdies', cursive;
-       height: 65px;
+       height: 70px;
        width: 100%;
        margin-top: -1em;
-      
+       
 }
 #horizontal-list { display: flex;
                    flex-direction: row;
                    justify-content: space-around;
-                    
+                                      
 }
-#image{ background-image: url('image/into2.jpg');
+#horizontal-list li{
+	margin:0px auto;
+	width:100%;
+}
+#image{ background-image: url('into2.jpg');
         height: 75vh;
         width: 90%;
-        position: absolute;
-        left: 50%;
-        top: 61%;
-        transform: translate(-50%, -50%); 
+        margin:0px auto; 
         background-size: cover;
         background-repeat: no-repeat;
         box-shadow: 8px 2px 10px 7px black;
         animation:slider 20s infinite linear;
+        margin-top:23px;  
+		
         
 }
 @keyframes slider {
   0% {
-    background-image: url('image/into2.jpg');
+    background-image: url('into2.jpg');
   }
   25% {
-    background-image: url('image/intro1.jpg');
+    background-image: url('intro1.jpg');
   }
   50%{
-    background-image: url('image/intro2.jpg');
+    background-image: url('intro2.jpg');
   }
  75%{
-    background-image: url('image/intro3.jpg');
+    background-image: url('intro3.jpg');
   }
 }
 #aboutus{ text-transform: uppercase;
